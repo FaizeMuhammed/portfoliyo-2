@@ -346,7 +346,8 @@ body
 .about-img
 {
     position: relative;
-    width: 400px;
+    width: 300px;
+    margin: auto;
     height: 400px;
     background: rgba(0, 0, 0,0.75);
     border-radius: 20px;
@@ -359,8 +360,9 @@ body
 .about-img::before
 {
     content: '';
+    margin: auto;
     position: absolute;
-    width: 400px;
+    width: 300px;
     height: 500px;
     background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
     animation: animate 4s linear infinite;
@@ -368,8 +370,9 @@ body
 .about-img::after
 {
     content: '';
+    margin: auto;
     position: absolute;
-    width: 400px;
+    width: 300px;
     height: 500px;
     background-image: conic-gradient(transparent,transparent,transparent,rgb(48, 210, 7));
     animation: animate 4s linear infinite;
@@ -403,7 +406,7 @@ z-index: 1;
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 400px;
+    width: 290px;
     height: 390px;
     /* border: 1px solid #f1f1f1; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -939,7 +942,19 @@ form .btn2
 
 @media screen and (max-width:768px) 
 {
+    .contact-left p{
+        display: flex;
+        margin: auto;
+    }
+    .social-icons{
+        display: flex;
+        flex-direction: row;
 
+    }
+    .contact-right{
+        width: 100%;
+        flex-basis: auto
+    }
     .box
         {
             position: relative;
@@ -1053,7 +1068,7 @@ form .btn2
  }
 
  .flip-card-front {
-    background-image: url('/backround.jpeg'); /* Replace with the actual image path */
+    background-image: url('/bccac106d0c9bb817e54df3409615832313.jpg'); /* Replace with the actual image path */
     background-size: cover; /* Ensures the image covers the entire div */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
